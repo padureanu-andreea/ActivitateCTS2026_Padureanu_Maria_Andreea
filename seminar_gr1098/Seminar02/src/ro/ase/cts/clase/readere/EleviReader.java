@@ -10,9 +10,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EleviReader extends AplicantReader {
+    public EleviReader(String numeFisier) {
+        super(numeFisier);
+    }
+
     @Override
-    public List<Aplicant> readAplicant(String file) throws FileNotFoundException {
-        Scanner input2 = new Scanner(new File(file));
+    public List<Aplicant> readAplicanti() throws FileNotFoundException {
+        Scanner input2 = new Scanner(new File(super.numeFisier));
         input2.useDelimiter(",|\n");
         List<Aplicant> elevi = new ArrayList<Aplicant>();
 
