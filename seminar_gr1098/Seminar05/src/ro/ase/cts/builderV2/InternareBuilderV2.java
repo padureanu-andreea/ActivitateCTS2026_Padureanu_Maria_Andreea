@@ -26,7 +26,7 @@ public class InternareBuilderV2 implements AbstractBuilderV2 {
 
     @Override
     public Internare build(String nume) {
-        return new Internare(nume, patRabatabil, papuciCamera, halatInterior, micDejun);
+        return new Internare(nume, patRabatabil, micDejun, papuciCamera, halatInterior);
     }
 
     @Override

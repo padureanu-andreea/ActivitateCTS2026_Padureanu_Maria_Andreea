@@ -13,5 +13,8 @@ public class Main {
         hotel2.rezervaCamera();
         hotel2.rezervaCamera();
 
+        hotel1.afiseazaDetaliiHotel();
+        hotel2.afiseazaDetaliiHotel();
+
     }
 }

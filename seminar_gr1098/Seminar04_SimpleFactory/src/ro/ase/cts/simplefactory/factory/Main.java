@@ -11,5 +11,6 @@ public class Main {
 
         autobuz.afiseazaDetalii();
         tramvai.afiseazaDetalii();
+        troleibuz.afiseazaDetalii();
     }
 }
