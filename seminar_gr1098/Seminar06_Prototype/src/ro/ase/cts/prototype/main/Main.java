@@ -12,7 +12,7 @@ public class Main {
 //        rezervare2.setZiuaRezervarii(17);
 
         RezervareAbstracta rezervare1 = new Rezervare("Gigica", 14, 24, "0723425621");
-        RezervareAbstracta rezervare2 = rezervare1.clone(); //prin metoda asta cu cast se incalca dependency inversion
+        RezervareAbstracta rezervare2 = rezervare1.clone();
 
         ((Rezervare)rezervare2).setOraRezervare(10);
         ((Rezervare)rezervare2).setZiuaRezervarii(17); //aici se respecta dependency inversion pt ca am dat cast aici
