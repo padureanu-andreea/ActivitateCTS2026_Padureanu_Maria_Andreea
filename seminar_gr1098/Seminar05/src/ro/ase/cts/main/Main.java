@@ -36,14 +36,18 @@ public class Main {
 
         //pentru varianta 2
         AbstractBuilderV2 builderV2 = new InternareBuilderV2();
-        builderV2.setMicDejun(true);
+//        builderV2.setMicDejun(true);
         ro.ase.cts.builderV2.Internare i5 = builderV2.build("Gigi");
         ro.ase.cts.builderV2.Internare i6 = builderV2.build("Gigica");
+        ro.ase.cts.builderV2.Internare i10 = builderV2.setPapuci(true).setHalat(true).setMicDejun(true).build("Irina");
+        ro.ase.cts.builderV2.Internare i11 = builderV2.build("Vlad");
 
         i5.setHalatInterior(true);
         i5.setPapuciCamera(true);
         System.out.println("i5: " + i5);
         System.out.println("i6: " + i6.toString());
+        System.out.println("i10: " + i10);
+        System.out.println("i11: " + i11);
 
         //pentru varianta 3
         InternareV3 i9 = InternareV3.builderV3("Dorel").setHalatInterior(true).build();

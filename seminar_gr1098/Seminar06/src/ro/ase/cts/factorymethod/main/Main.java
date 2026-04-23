@@ -16,7 +16,7 @@ public class Main {
         FelDeMancare supaCiuperci1 = fabricaSupa.getFelDeMancare(TipSupa.CIUPERCI, 25.5f, 350.0f);
         FelDeMancare supaLegume1 = fabricaSupa.getFelDeMancare(TipSupa.LEGUME, 23.7f, 300.0f);
 
-        FelDeMancare papanasi1 = fabricaDesert.getFelDeMancare(TipDesert.PAPANASI, 35.4f, 430.0f, 520);
+        FelDeMancare papanasi1 = fabricaDesert.getFelDeMancare(TipDesert.PAPANASI, 35.4f, 430.0f/*, 520*/);
         FelDeMancare clatita1 = fabricaDesert.getFelDeMancare(TipDesert.CLATITE, 20.4f, 200.0f, 334);
 
         supaLegume1.afisareDescriere();
